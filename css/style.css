@@ -159,17 +159,20 @@ body{height:4000px;}
 #portfolio .element-item .item-inner img {
   width: 100%;
   transition: all .3s;
-  transform: scale(1);
+  transform: translateY(0px);
 }
 #portfolio .item-inner .port-info {
   opacity: 0;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   left: 0;
   bottom: 0;
+  padding: 15px 25px;
   width: 100%;
   background: #50d8af;
   color: #fff;
-  transition: all .3s;
+  transition: all .1s;
   transform: translateY(10px);
 }
 #portfolio .item-inner:hover .port-info {
@@ -177,5 +180,34 @@ body{height:4000px;}
   transform: translateY(0px);
 }
 #portfolio .element-item .item-inner:hover img {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+}
+#portfolio .item-inner .port-info .port-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#portfolio .item-inner .port-info .port-title h4 {
+  margin: 0;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#portfolio .item-inner .port-info .port-title p {
+  margin: 0;
+  font-size: 14px;
+  padding: 10px 5px;
+}
+#portfolio .item-inner .port-info .port-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .item-inner .port-info .port-link a {
+  color: #fff;
+  margin: 0 5px;
+}
+#portfolio .item-inner .port-info .port-link i {
+  font-size: 20px;
 }
