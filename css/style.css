@@ -5,7 +5,7 @@ a{color:#50d8af; text-decoration: none;}
 ol, ul{list-style:none;}
 p{padding:0; margin:0 0 30px 0;}
 h1, h2, h3, h4, h5, h6{font-family:"Montserrat"; font-weight:400; margin:0 0 20px 0; padding:0;}
-input, textarea, button{outline:0;}
+input, textarea, button{outline:0; border: 1px solid #999;}
 textarea{resize:none;}
 
 /* Layout Reset Style Code */
@@ -54,8 +54,6 @@ textarea{resize:none;}
 #intro .item{display:flex; justify-content: center; align-items: center;} */
 #intro .overlay{position:absolute; width:100%; height:100%; left:0; top:0; background:rgba(255, 255, 255, 0.5); z-index:10;}
 #intro .intro-contents{background:transparent; z-index:11; position:relative; display:flex; flex-direction: column; text-align:center;}
-
-body{height:4000px;}
 
 /* Main Slogan Text Style Code */
 #intro .intro-contents h2{font-size:64px; color:#0c2e8a; font-weight:700; margin:0 0 40px 0;}
@@ -168,7 +166,7 @@ body{height:4000px;}
   justify-content: space-between;
   left: 0;
   bottom: 0;
-  padding: 15px 25px;
+  padding: 10px 30px;
   width: 100%;
   background: #50d8af;
   color: #fff;
@@ -210,4 +208,78 @@ body{height:4000px;}
 }
 #portfolio .item-inner .port-info .port-link i {
   font-size: 20px;
+}
+
+/* Contact Section Area */
+#contact .map {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+#contact .map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#contact .contact-form {
+  width: 100%;
+}
+#contact .contact-form input:focus {
+  border: 1px solid #50d8af;
+}
+#contact .contact-form p {
+  margin-bottom: 10px;
+}
+#contact .contact-form .name-email {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .contact-form .name-email input {
+  width: calc(50% - 5px);
+  padding: 10px;
+}
+#contact .contact-form .subject input {
+  width: 100%;
+  padding: 10px;
+}
+#contact .contact-form .message textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-family: 'Open-Sans';
+}
+#contact .contact-form .message textarea:focus {
+  border: 1px solid #50d8af;
+}
+#contact .contact-form .form-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#contact .contact-form .form-btns button {
+  outline: 0;
+  border: 1px solid #50d8af;
+  padding: 10px 30px;
+  margin: 5px;
+  color: #333;
+  font-weight: 600;
+  background: #fff;
+  cursor: pointer;
+}
+#contact .contact-form .form-btns button:hover {
+  background: #50d8af;
+  color: #fff;
+}
+
+/* Footer Area */
+footer {
+  width: 100%;
+  background: #50d8af;
+}
+footer p {
+  padding: 15px 0;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
 }

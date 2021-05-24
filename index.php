@@ -18,10 +18,11 @@
   <!-- Library Style Link -->
   <link rel="stylesheet" href="lib/animate/animate.min.css">
   <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./lib/venobox/venobox.min.css">
 
   <!-- Main Style Link -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
@@ -205,11 +206,11 @@
                 <img src="./img/portfolio/1.jpg" alt="portfolio">
                 <div class="port-info">
                   <div class="port-title">
-                    <h4>App1</h4>
-                    <p>Application</p>
+                    <h4>Card1</h4>
+                    <p>Card</p>
                   </div>
                   <div class="port-link">
-                    <a href="#">
+                    <a href="./img/portfolio/1.jpg" class="venobox" data-gall="a">
                       <i class="bx bx-plus"></i>
                     </a>
                     <a href="#">
@@ -222,47 +223,183 @@
             <div class="element-item app">
               <div class="item-inner">
                 <img src="./img/portfolio/2.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>App1</h4>
+                    <p>Application</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/2.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item web">
               <div class="item-inner">
                 <img src="./img/portfolio/3.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>Web1</h4>
+                    <p>Website</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/3.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item web">
               <div class="item-inner">
                 <img src="./img/portfolio/4.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>Web2</h4>
+                    <p>Website</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/4.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item card">
               <div class="item-inner">
                 <img src="./img/portfolio/5.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>Card2</h4>
+                    <p>Card</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/5.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item app">
               <div class="item-inner">
                 <img src="./img/portfolio/6.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>App2</h4>
+                    <p>Application</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/6.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item app">
               <div class="item-inner">
                 <img src="./img/portfolio/7.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>App3</h4>
+                    <p>Application</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/7.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="element-item web">
               <div class="item-inner">
                 <img src="./img/portfolio/8.jpg" alt="portfolio">
+                <div class="port-info">
+                  <div class="port-title">
+                    <h4>Web3</h4>
+                    <p>Website</p>
+                  </div>
+                  <div class="port-link">
+                    <a href="./img/portfolio/8.jpg" class="venobox" data-gall="a">
+                      <i class="bx bx-plus"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Contact Section Area -->
+    <section id="contact" class="section">
+      <div class="center">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5972617684747!2d-0.49146008246794964!3d38.337921951209715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364a6cedda8b%3A0xcd39dbda08b43c25!2sEstaci%C3%B3%20d&#39;autobusos%20d&#39;Alacant!5e0!3m2!1sko!2skr!4v1621839805844!5m2!1sko!2skr"></iframe>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post" name="contact_form_data">
+            <p class="name-email">
+              <input type="text" placeholder="Your Name" name="name" />
+              <input type="email" placeholder="Your E-mail" name="email" />
+            </p>
+            <p class="subject">
+              <input type="text" name="subject" id="subject" placeholder="Write Subject">
+            </p>
+            <p class="message">
+              <textarea name="message" id="message" placeholder="Your Messages Here"></textarea>
+            </p>
+            <div class="form-btns">
+              <button type="button" class="send-btn">Send</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-list">
+
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Project Mong Design All Right Reserved.&copy;</p>
+    </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="./lib/venobox/venobox.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/submit.js"></script>
 </body>
 </html>

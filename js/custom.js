@@ -143,4 +143,7 @@ $(function(){
     let filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
+
+  // VenoBox LightBox(ModalBox) pulgin Code
+  $(".venobox").venobox(); //VenoBox init
 });

@@ -1,10 +1,23 @@
-@media screen and (max-width:1140px){
+@media screen and (max-width: 1140px){
   .center{padding:0 15px;}
 
   /* About Section Style Code */
   #about .center .about-left{display:flex; align-items: center;}
   #about .about-right h2{font-size:28px;}
   #about .about-right h3{display:none;}
+}
+
+@media screen and (max-width: 950px){
+  /* Protfolio Section Style Code */
+  #portfolio .item-inner .port-info {
+    padding: 10px;
+  }
+  #portfolio .port-info .port-title h4 {
+    margin-bottom: 0;
+  }
+  #portfolio .port-info .port-title p {
+    display: none;
+  }
 }
 
 @media screen and (max-width:700px){
@@ -49,6 +62,9 @@
   }
   #services .services-boxes .box .box-text h4 {
     margin: 0 0 10px 0;
+  }
+  #portfolio .element-item {
+    width: 33.33%;
   }
 }
 
