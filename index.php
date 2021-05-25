@@ -420,7 +420,7 @@
             //   echo($msg);
             // }
             while($row = mysqli_fetch_array($result)){
-              $name = $row['RE_name'];
+              $name = mb_substr($row['RE_name'],0,1,'UTF-8')."*".mb_substr($row['RE_name'], 2, mb_strlen($row['RE_name'], 'UTF-8'), 'UTF-8');
               $email = $row['RE_email'];
               $subject = $row['RE_subject'];
               $reg = $row['RE_reg'];
