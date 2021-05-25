@@ -283,3 +283,41 @@ footer p {
   text-align: center;
   margin-bottom: 0;
 }
+
+/* Receive Section Area */
+#receive .msg-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#receive .msg-table li {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  color: #333;
+}
+#receive .msg-tit {
+  background: #50d8af;
+}
+#receive .msg-tit span {
+  color: #fff;
+}
+#receive ul span:nth-child(1) {
+  width: 10%;
+}
+#receive ul span:nth-child(2) {
+  width: 20%;
+}
+#receive ul span:nth-child(3) {
+  width: 45%;
+}
+#receive .msg-con span:nth-child(3) {
+  width: 45%;
+  text-align: left;
+}
+#receive ul span:nth-child(4) {
+  width: 20%;
+}
+#receive .msg-con {
+  background: rgba(0, 0, 0, 0.1);
+}

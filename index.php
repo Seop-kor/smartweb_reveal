@@ -368,7 +368,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5972617684747!2d-0.49146008246794964!3d38.337921951209715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364a6cedda8b%3A0xcd39dbda08b43c25!2sEstaci%C3%B3%20d&#39;autobusos%20d&#39;Alacant!5e0!3m2!1sko!2skr!4v1621839805844!5m2!1sko!2skr"></iframe>
         </div>
         <div class="contact-form">
-          <form action="#" method="post" name="contact_form_data">
+          <form action="/website/reveal/php/insert.php" method="post" name="contact_form_data">
             <p class="name-email">
               <input type="text" placeholder="Your Name" name="name" />
               <input type="email" placeholder="Your E-mail" name="email" />
@@ -385,9 +385,63 @@
             </div>
           </form>
         </div>
-        <div class="contact-list">
-
+      </div>
+    </section>
+    <section id="receive" class="section">
+      <div class="center">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
         </div>
+        <ul class="msg-table">
+          <li class="msg-tit">
+            <span>글쓴이</span>
+            <span>이메일</span>
+            <span>제목</span>
+            <span>등록일</span>
+          </li>
+          <?php
+            include_once $_SERVER['DOCUMENT_ROOT']."/website/reveal/php/connect.php";
+            $sql = "select * from re_message order by RE_idx desc";
+
+            $result = mysqli_query($dbConnect, $sql);
+            // while($row = mysqli_fetch_assoc($result)){
+            //   $name = $row['RE_name'];
+            //   $email = $row['RE_email'];
+            //   $subject = $row['RE_subject'];
+            //   $reg = $row['RE_reg'];
+              
+            //   $msg = "<li class='msg-con'>
+            //   <span>$name</span>
+            //   <span>$email</span>
+            //   <span>$subject</span>
+            //   <span>$reg</span>
+            //   </li>";
+            //   echo($msg);
+            // }
+            while($row = mysqli_fetch_array($result)){
+              $name = $row['RE_name'];
+              $email = $row['RE_email'];
+              $subject = $row['RE_subject'];
+              $reg = $row['RE_reg'];
+          ?>
+          <li class="msg-con">
+            <span><?=$name?></span>
+            <span><?=$email?></span>
+            <span><?=$subject?></span>
+            <span><?=$reg?></span>
+          </li>
+          <?php
+            }
+          ?>
+          <!--
+          <li class="msg-con">
+            <span>성덕선</span>
+            <span>1988@naver.com</span>
+            <span>덕선이로부터..</span>
+            <span>2021-05-25</span>
+          </li> -->
+        </ul>
       </div>
     </section>
     <footer>
