@@ -66,6 +66,28 @@
   #portfolio .element-item {
     width: 33.33%;
   }
+
+  /* Receive Section Style Code */
+  #receive ul span:nth-child(1) {
+    width: 25%;
+  }
+  #receive ul span:nth-child(2) {
+    display: none;
+  }
+  #receive ul span:nth-child(3) {
+    width: 50%;
+  }
+  #receive ul span:nth-child(4) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #portfolio .element-item {
+    width: 50%;
+  }
+  #contact .map {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width:400px){
@@ -82,6 +104,34 @@
     font-size: 18px;
   }
   #services .services-boxes .box p {
+    display: none;
+  }
+
+  /* Contact Section Style code */
+  #contact .contact-form .name-email {
+    flex-direction: column;
+  }
+  #contact .contact-form .name-email input {
+    width: 100%;
+  }
+  #contact .contact-form .name-email input:first-child {
+    margin-bottom: 10px;
+  }
+
+  /* Receive Section Style Code */
+  #receive ul span {
+    font-size: 12px;
+  }
+  #receive ul span:nth-child(1) {
+    width: 50%;
+  }
+  #receive ul span:nth-child(2) {
+    display: none;
+  }
+  #receive ul span:nth-child(3) {
+    width: 50%;
+  }
+  #receive ul span:nth-child(4) {
     display: none;
   }
 }
